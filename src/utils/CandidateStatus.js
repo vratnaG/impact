@@ -1,7 +1,7 @@
+let status = {}
 
 export var CandidateStatus = (function () {
-    let status = {}
-    const _rejected = 0
+    const _rejected = 2
     const _seleceted = 1
     const _NA = -1
     function initStatus() {
@@ -17,6 +17,7 @@ export var CandidateStatus = (function () {
     }
 
     function getStatus(id) {
+        console.log(status)
         return status[id] || _NA
     }
 
