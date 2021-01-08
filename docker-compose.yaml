@@ -1,0 +1,11 @@
+version: "3"
+services:
+  impact-ui:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: impact-ui:latest
+    environment:
+      - BUILD_ENV=dev
+    ports:
+      - 3002:3000
